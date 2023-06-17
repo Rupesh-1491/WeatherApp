@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>link}}
+</head>
+
+<body>
+    {{>header}}
+
+    <!-- main header
+     -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- right side div  -->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="Images/about.png" alt="Rupesh" class="img-fluid" title="Rupesh Gupta">
+                        </figure>
+
+
+                    </div>
+                    <!-- left side div  -->
+                    <div class="col-md-6 col-12 about_header_left">
+                        <p>Welcome to Weather app</p>
+                        <h1>Hey, I Am A <span class="typing">MERN Stack Developer</span> </h1>
+
+                        <a href="https://rupesh-port.netlify.app/#portfolio" target="_blank"><button>About
+                                Me</button></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer work  -->
+
+    {{>footer}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script>
+        // typing animation
+        var typd = new Typed(".typing", {
+            strings: ["", "Frontend Developer", "Programmer", "Backend Developer", "MERN Stack Developer"],
+            typeSpeed: 100,
+            BackSpeed: 60,
+            loop: true
+        })
+
+
+    </script>
+</body>
+
+</html>
